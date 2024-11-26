@@ -20,7 +20,7 @@ public class Concreto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    Integer idConcreto;
+    Integer idCalculoConcreto;
     String nombreObra;
     Double largo;
     Double ancho;
