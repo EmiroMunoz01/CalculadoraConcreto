@@ -6,4 +6,6 @@ import com.example.demo.modelo.Concreto;
 
 public interface ConcretoRepositorio extends JpaRepository<Concreto, Integer> {
 
+   
+
 }
