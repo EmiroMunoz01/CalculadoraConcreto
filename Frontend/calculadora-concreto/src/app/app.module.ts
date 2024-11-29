@@ -16,7 +16,7 @@ import { AppRoutingModule } from './app-routing.module';
     AgregarConcretoComponent,
     EditarConcretoComponent
   ],
-    //4 debemos importar el modulo http para poder utilizarlo
+    //4 debemos importar el modulo http para poder utilizarlo, pero aparece tachado, seguramente no es necesario importarlo de esta forma
   imports: [
     BrowserModule,
     HttpClientModule,
