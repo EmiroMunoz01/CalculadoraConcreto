@@ -1,24 +1,22 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConcretoListaComponent } from './concreto-lista/concreto-lista.component';
-import { ConcretoComponent } from './concreto/concreto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ConcretoListaComponent,
-    ConcretoComponent
+    ConcretoListaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    provideClientHydration()
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  
-}
+export class AppModule { }

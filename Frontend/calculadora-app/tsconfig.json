@@ -5,7 +5,6 @@
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "strict": true,
-    //agregamos esta linea para evitar los errores de la entidad al no inicializar sus variables
     "strictPropertyInitialization": false,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
