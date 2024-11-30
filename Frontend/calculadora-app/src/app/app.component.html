@@ -2,7 +2,8 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">Calculadora Concreto</a>
+      <!-- 13 agregaremos el router link para indicar hacia donde dirigira la seccion, esta es una directiva de angular -->
+      <a class="navbar-brand" routerLink="concreto">Calculadora Concreto</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -10,7 +11,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active" aria-current="page" routerLink="concreto" routerLinkActive="active">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/agregar">Agregar Concreto</a>
@@ -23,7 +24,9 @@
   </nav>
 </div>
 
-
-<div class="container"><app-concreto-lista></app-concreto-lista></div>
-
+<!-- 14 no agregaremos el componente de forma directa, lo que llamaremos es una ruta, dependiendo del componente que necesitemos el router outlet lo llamara de forma automatica
+<div class="container"><app-concreto-lista></app-concreto-lista></div> -->
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
 
